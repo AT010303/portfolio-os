@@ -20,11 +20,13 @@
     "ecmaVersion": 14,
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint"],
+  "plugins": ["react", "@typescript-eslint", "simple-import-sort"],
   "rules": {
     "comma-dangle": "off",
     "react/jsx-props-no-spreading": "off",
-    "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }]
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error"
   },
   "globals": {
     "React": "readonly"
