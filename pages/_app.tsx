@@ -1,8 +1,17 @@
 import 'styles/globals.scss';
 
 import type { AppProps } from 'next/app';
+import Head from 'next/head';
 import type { ReactElement } from 'react';
 
 export default function App({ Component, pageProps }: AppProps): ReactElement {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Head>
+        <title>portfolio-os</title>
+        <meta name="description" content="My portfolio website" />
+      </Head>
+      <Component {...pageProps} />
+    </>
+  );
 }
