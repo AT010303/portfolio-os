@@ -3,7 +3,6 @@ import Head from 'next/head';
 import type { ReactElement } from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
-
 const GlobalStyle = createGlobalStyle`
   html,
   body {
@@ -19,10 +18,9 @@ const GlobalStyle = createGlobalStyle`
 
 const theam = {
   colors: {
-    primary: '#0070f3',
-  },
+    primary: '#0070f3'
+  }
 };
-
 
 export default function App({ Component, pageProps }: AppProps): ReactElement {
   return (
@@ -32,8 +30,8 @@ export default function App({ Component, pageProps }: AppProps): ReactElement {
         <meta name="description" content="My portfolio website" />
       </Head>
       <GlobalStyle />
-      <ThemeProvider theme = {theam}>
-      <Component {...pageProps} />
+      <ThemeProvider theme={theam}>
+        <Component {...pageProps} />
       </ThemeProvider>
     </>
   );
