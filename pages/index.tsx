@@ -1,5 +1,12 @@
 import type { ReactElement } from 'react';
+import styled from 'styled-components';
+
+const Title = styled.h1`
+  font-size: 1.5em;
+  text-align: center;
+  color: #BF4F74;
+`;
 
 export default function Home(): ReactElement {
-  return <h1>Hello World</h1>;
+  return <Title>Hello, World!</Title>;
 }
