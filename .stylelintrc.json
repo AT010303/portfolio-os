@@ -3,8 +3,7 @@
     "stylelint-config-standard",
     "stylelint-config-sass-guidelines",
     "stylelint-prettier"
-
-],
+  ],
   "customSyntax": "postcss-styled-syntax",
   "rules": {}
 }
