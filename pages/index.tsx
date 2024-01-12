@@ -1,6 +1,6 @@
 import type { ReactElement } from 'react';
-import Title from 'styles/generic/Title';
+import processDirectory from 'utils/processDirectory';
 
 export default function Home(): ReactElement {
-  return <Title>Hello, World!</Title>;
+  return <processDirectory.HelloWorld.Component />;
 }
