@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/extensions
 import StyledApp from 'components/pages/StyledApp';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';

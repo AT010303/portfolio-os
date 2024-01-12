@@ -19,12 +19,11 @@
 
 // export default StyledApp;
 
-
-// github copilot sugested but abive code also works 
+// github copilot sugested but abive code also works
 
 /* eslint-disable react/function-component-definition */
 import type { FC, ReactNode } from 'react';
-import { ThemeProvider } from 'styled-components'; 
+import { ThemeProvider } from 'styled-components';
 // eslint-disable-next-line import/extensions
 import GlobalStyle from 'styles/GlobalStyle';
 import themes from 'styles/themes.json';
@@ -32,17 +31,17 @@ import themes from 'styles/themes.json';
 import type { StyledAppProps } from '../../types/components/pages/StyledApp';
 
 interface StyledAppPropsWithChildren extends StyledAppProps {
-    children: ReactNode;
+  children: ReactNode;
 }
 
 const StyledApp: FC<StyledAppPropsWithChildren> = ({
-    children,
-    theme = themes.default
+  children,
+  theme = themes.default
 }) => (
-    <>
-        <GlobalStyle />
-        <ThemeProvider theme={theme}>{children}</ThemeProvider>
-    </>
+  <>
+    <GlobalStyle />
+    <ThemeProvider theme={theme}>{children}</ThemeProvider>
+  </>
 );
 
 export default StyledApp;
