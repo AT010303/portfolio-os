@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import GlobalStyle from 'styles/GlobalStyle';
 import themes from 'styles/themes.json';
 
-const StyledApp: FC<{children : any}> = ({ children }) => (
+const StyledApp: FC<{ children: any }> = ({ children }) => (
   <>
     <GlobalStyle />
     <SessionConsumer>
