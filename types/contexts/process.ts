@@ -9,5 +9,5 @@ export type Processes = {
 };
 
 export type ProcessContextState = {
-    processes: Processes;
-  };
+  processes: Processes;
+};
