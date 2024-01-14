@@ -3,6 +3,7 @@ import { ProcessConsumer } from 'contexts/process';
 import type { FC } from 'react';
 
 // TODO: Add linting rule to catch key required
+// Dosent work because it is behind a conditional
 
 const ProcessLoader: FC = () => (
   <ProcessConsumer>
