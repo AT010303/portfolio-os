@@ -15,5 +15,5 @@ export type ProcessContextState = {
 
 export type ProcessProviderProps = {
   startupProcesses: Processes;
-  children: any; // becaues contexts process was crying may be react strict mode or es lint
+  children?: any; // becaues contexts process was crying may be react strict mode or es lint
 };
