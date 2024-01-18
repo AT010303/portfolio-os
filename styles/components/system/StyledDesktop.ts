@@ -8,7 +8,7 @@ const StyledDesktop = styled.main`
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: #000000;
+  background-color: ${({ theme }) => theme.colors.backgroundColor};
 `;
 
 export default StyledDesktop;
