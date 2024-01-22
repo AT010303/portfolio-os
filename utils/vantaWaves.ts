@@ -13,13 +13,15 @@ const disableControls = {
 
 const vantaWaves =
   (settings: VantaWavesSettings): WallpaperEffect =>
-  (desktopRef: React.RefObject<HTMLElement>) => {
-    const vantaEffect = WAVES({
-      el: desktopRef.current,
-      THREE,
-      ...disableControls,
-      ...settings
-    });
+  (element) => {
+    const vantaEffect = element
+      ? WAVES({
+          el: element,
+          THREE,
+          ...disableControls,
+          ...settings
+        })
+      : undefined;
 
     return () => {
       vantaEffect?.destroy?.();
