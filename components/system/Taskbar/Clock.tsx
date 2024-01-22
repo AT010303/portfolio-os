@@ -1,4 +1,4 @@
-import StyledClock from 'styles/components/system/StyledClock';
+import StyledClock from 'styles/components/system/Taskbar/StyledClock';
 
 const Clock: React.FC = () => <StyledClock>06:23 PM</StyledClock>;
 

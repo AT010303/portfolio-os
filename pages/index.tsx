@@ -1,4 +1,4 @@
-import ProcessLoader from 'components/system/ProcessLoader';
+import ProcessLoader from 'components/system/Processes/ProcessLoader';
 import { ProcessProvider } from 'contexts/process';
 import Desktop from 'components/system/Desktop';
 
