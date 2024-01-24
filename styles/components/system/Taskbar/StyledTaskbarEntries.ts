@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 
 const StyledTaskbarEntries = styled.ol`
+  background-color: purple;
   height: 100%;
-  width: 75%;
+  left: ${({ theme }) => theme.sizes.startButton.width};
   position: absolute;
-  left: 10%;
-  bottom: 0;
-  background-color: #444;
+  right: ${({ theme }) => theme.sizes.clock.width};
 `;
 
 export default StyledTaskbarEntries;

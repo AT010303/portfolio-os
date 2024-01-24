@@ -1,11 +1,9 @@
 import styled from 'styled-components';
 
 const StyledTaskbarEntry = styled.li`
+  background-color: pink;
   height: 100%;
-  width: 20%;
-  position: absolute;
-  bottom: 0;
-  background-color: #456;
+  width: ${({ theme }) => theme.sizes.taskbar.entry.width};
 `;
 
 export default StyledTaskbarEntry;
