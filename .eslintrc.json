@@ -29,8 +29,25 @@
     "simple-import-sort/exports": "error",
     "semi": ["error", "always"],
     "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
     "react/prop-types": "off",
-    "allowImportingTsExtensions": "enable"
+    "allowImportingTsExtensions": "off"
   },
   "globals": {
     "React": "readonly"

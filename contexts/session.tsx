@@ -7,8 +7,8 @@ const { Consumer, Provider } = createContext<SessionContextState>(
   initialSessionContextState
 );
 
-export const SessionProvider: React.FC<{ children?: any }> = ({ children }) => (
-  <Provider value={useSessionContextState()}>{children}</Provider>
-);
+export const SessionProvider: React.FC<{ children?: React.ReactNode }> = ({
+  children
+}) => <Provider value={useSessionContextState()}>{children}</Provider>;
 
 export const SessionConsumer = Consumer;

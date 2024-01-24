@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 export type VantaWavesSettings = {
   color: number;
   shininess: number;

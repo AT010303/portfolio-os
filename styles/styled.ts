@@ -1,4 +1,5 @@
 import 'styled-components';
+
 import type { WallpaperEffect } from 'types/styles/wallpaper';
 
 declare module 'styled-components' {
@@ -18,11 +19,11 @@ declare module 'styled-components' {
       };
       taskbar: {
         entry: {
-          width: string
+          width: string;
         };
         height: string;
-      }
-    }
+      };
+    };
 
     wallpaper?: WallpaperEffect;
   }

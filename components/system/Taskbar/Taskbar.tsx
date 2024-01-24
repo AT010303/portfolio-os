@@ -1,7 +1,8 @@
 import StyledTaskbar from 'styles/components/system/Taskbar/StyledTaskbar';
+
+import Clock from './Clock';
 import StartButton from './StartButton';
 import TaskbarEntries from './TaskbarEntries';
-import Clock from './Clock';
 
 const Taskbar: React.FC = () => (
   <StyledTaskbar>

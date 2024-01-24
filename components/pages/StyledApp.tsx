@@ -3,7 +3,7 @@ import { ThemeProvider } from 'styled-components';
 import GlobalStyle from 'styles/GlobalStyle';
 import themes from 'styles/themes';
 
-const StyledApp: React.FC<{ children?: any }> = ({ children }) => (
+const StyledApp: React.FC<{ children?: React.ReactNode }> = ({ children }) => (
   <SessionConsumer>
     {({ themeName }) => (
       <ThemeProvider theme={themes[themeName] || themes.defaultTheme}>

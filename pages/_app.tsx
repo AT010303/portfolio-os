@@ -1,3 +1,4 @@
+/* eslint-disable react/function-component-definition */
 import Metadata from 'components/pages/Metadata';
 import StyledApp from 'components/pages/StyledApp';
 import { SessionProvider } from 'contexts/session';

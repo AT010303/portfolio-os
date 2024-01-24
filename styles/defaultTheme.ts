@@ -29,6 +29,6 @@ const sizes = {
   }
 };
 
-const defaultTheme = { colors, sizes ,wallpaper };
+const defaultTheme = { colors, sizes, wallpaper };
 
 export default defaultTheme;
