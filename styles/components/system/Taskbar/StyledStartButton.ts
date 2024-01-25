@@ -6,6 +6,9 @@ const StyledStartButton = styled.button`
   left: 0;
   position: absolute;
   width: ${({ theme }) => theme.sizes.startButton.width};
+  display: flex;
+  place-content: center;
+  place-items: center;
 `;
 
 export default StyledStartButton;

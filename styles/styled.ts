@@ -4,8 +4,7 @@ import type { WallpaperEffect } from 'types/styles/wallpaper';
 
 declare module 'styled-components' {
   export interface DefaultTheme {
-    
-    wallpaper ?: WallpaperEffect;
+    wallpaper?: WallpaperEffect;
 
     colors: {
       backgroundcolor: string;

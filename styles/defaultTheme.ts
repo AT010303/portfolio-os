@@ -19,7 +19,7 @@ const sizes = {
     width: '90px'
   },
   startButton: {
-    width: '30px'
+    width: '60px'
   },
   taskbar: {
     entry: {
