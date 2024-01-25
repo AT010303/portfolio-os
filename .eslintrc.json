@@ -51,7 +51,8 @@
     "allowImportingTsExtensions": "off"
   },
   "globals": {
-    "React": "readonly"
+    "React": "readonly",
+    "JSX": "readonly"
   },
   "settings": {
     "import/parsers": {
