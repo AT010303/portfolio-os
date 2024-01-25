@@ -7,19 +7,25 @@ const colors = {
 };
 
 const wallpaper = vantaWaves({
-  color: 0x5588,
-  shininess: 35,
-  waveHeight: 15,
-  waveSpeed: 0.3,
+  color: 0x222222,
+  shininess: 75,
+  waveHeight: 40,
+  waveSpeed: 1,
   zoom: 0.9
 });
 
+const fonts = {
+  clock:{
+    size: '14px'
+  }
+};
+
 const sizes = {
   clock: {
-    width: '90px'
+    width: '76px'
   },
   startButton: {
-    width: '60px'
+    width: '36px'
   },
   taskbar: {
     entry: {
@@ -29,6 +35,6 @@ const sizes = {
   }
 };
 
-const defaultTheme = { colors, sizes, wallpaper };
+const defaultTheme = { colors, sizes, wallpaper, fonts };
 
 export default defaultTheme;

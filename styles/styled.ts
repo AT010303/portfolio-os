@@ -12,6 +12,12 @@ declare module 'styled-components' {
       window: string;
     };
 
+    fonts: {
+      clock: {
+        size: string;
+      }
+    }
+
     sizes: {
       clock: {
         width: string;
