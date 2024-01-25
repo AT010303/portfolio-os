@@ -15,7 +15,7 @@ const wallpaper = vantaWaves({
 });
 
 const fonts = {
-  clock:{
+  clock: {
     size: '14px'
   }
 };

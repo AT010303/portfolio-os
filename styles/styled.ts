@@ -15,8 +15,8 @@ declare module 'styled-components' {
     fonts: {
       clock: {
         size: string;
-      }
-    }
+      };
+    };
 
     sizes: {
       clock: {
