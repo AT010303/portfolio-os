@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "eslint": "eslint .",
-    "stylelint": "stylelint **/*.tsx",
+    "stylelint": "stylelint **/*.ts",
     "prettier": "prettier --write ."
   },
   "dependencies": {

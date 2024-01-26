@@ -1,17 +1,19 @@
+import type { DefaultTheme } from 'styled-components/dist/types';
 import vantaWaves from 'utils/vantaWaves';
 
 const colors = {
   backgroundcolor: '#000',
   primary: '#000',
-  window: '#808080'
+  window: '#808080',
+  taskbar: 'rgba(0,0,0,0.6)'
 };
 
 const wallpaper = vantaWaves({
-  color: 0x222222,
-  shininess: 75,
-  waveHeight: 40,
-  waveSpeed: 1,
-  zoom: 0.9
+  color: 0x5263,
+  shininess: 100,
+  waveHeight: 15,
+  waveSpeed: 2,
+  zoom: 0.5
 });
 
 const fonts = {
@@ -35,6 +37,6 @@ const sizes = {
   }
 };
 
-const defaultTheme = { colors, sizes, wallpaper, fonts };
+const defaultTheme: DefaultTheme = { colors, sizes, wallpaper, fonts };
 
 export default defaultTheme;

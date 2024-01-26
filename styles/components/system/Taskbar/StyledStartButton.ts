@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
-const StyledStartButton = styled.button`
-  background-color: red;
+const StyledStartButton = styled.button.attrs({ type: 'button' })`
   height: 100%;
   left: 0;
   position: absolute;

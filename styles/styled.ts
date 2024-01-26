@@ -10,6 +10,7 @@ declare module 'styled-components' {
       backgroundcolor: string;
       primary: string;
       window: string;
+      taskbar: string;
     };
 
     fonts: {
