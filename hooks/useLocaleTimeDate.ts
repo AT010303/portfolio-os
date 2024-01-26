@@ -12,7 +12,7 @@ const useLocaleTimeDate = (now: Date): LocalTimeDate => {
   const { locale = config.i18n?.defaultLocale } = useRouter() || {};
   const { formats } = useTheme();
   return {
-    date: new Intl.DateTimeFormat("en-GB", formats.date).format(now),
+    date: new Intl.DateTimeFormat('en-GB', formats.date).format(now),
     time: new Intl.DateTimeFormat(locale, formats.time).format(now),
     dateTime: now.toISOString()
   };
