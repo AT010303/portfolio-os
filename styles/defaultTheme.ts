@@ -5,7 +5,7 @@ const colors = {
   backgroundcolor: '#000',
   primary: '#000',
   window: '#808080',
-  taskbar: 'rgba(0,0,0,0.6)'
+  taskbar: 'rgba(10,10,10,0.75)'
 };
 
 const wallpaper = vantaWaves({
@@ -33,7 +33,7 @@ const sizes = {
     entry: {
       maxWidth: '161px'
     },
-    height: '30px'
+    height: '40px'
   }
 };
 
