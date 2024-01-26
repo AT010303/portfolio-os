@@ -5,7 +5,7 @@ import StyledStartButton from 'styles/components/system/Taskbar/StyledStartButto
 
 const StartButton = (): JSX.Element => (
   <StyledStartButton title="START">
-    <FontAwesomeIcon icon={faWindows}/>
+    <FontAwesomeIcon icon={faWindows} />
   </StyledStartButton>
 );
 

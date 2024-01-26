@@ -13,6 +13,11 @@ declare module 'styled-components' {
       taskbar: string;
     };
 
+    formats: {
+      date: Intl.DateTimeFormatOptions;
+      time: Intl.DateTimeFormatOptions;
+    };
+
     fonts: {
       clock: {
         size: string;

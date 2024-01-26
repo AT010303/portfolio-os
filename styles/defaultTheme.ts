@@ -16,6 +16,20 @@ const wallpaper = vantaWaves({
   zoom: 0.5
 });
 
+const formats = {
+  date: {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric'
+  } as const,
+  time: {
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hour12: true
+  } as const
+};
+
 const fonts = {
   clock: {
     size: '14px'
@@ -37,6 +51,6 @@ const sizes = {
   }
 };
 
-const defaultTheme: DefaultTheme = { colors, sizes, wallpaper, fonts };
+const defaultTheme: DefaultTheme = { colors, formats, sizes, wallpaper, fonts };
 
 export default defaultTheme;
