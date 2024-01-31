@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   button {
-    background-color: unset;
+    background-color: transparent;
   }
 
   ol,ul{
