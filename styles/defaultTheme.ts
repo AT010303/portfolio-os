@@ -17,17 +17,17 @@ const wallpaper = vantaWaves({
 });
 
 const formats = {
-  date: {
+  date: <Intl.DateTimeFormatOptions>{
     day: 'numeric',
     month: 'long',
     year: 'numeric'
-  } as const,
-  time: {
+  },
+  time: <Intl.DateTimeFormatOptions>{
     hour: '2-digit',
     minute: '2-digit',
     second: '2-digit',
     hour12: true
-  } as const
+  }
 };
 
 const fonts = {
