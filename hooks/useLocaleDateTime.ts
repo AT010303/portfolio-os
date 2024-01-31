@@ -8,7 +8,7 @@ type LocalTimeDate = {
   dateTime: string;
 };
 
-const useLocaleTimeDate = (now: Date): LocalTimeDate => {
+const useLocaleDateTime = (now: Date): LocalTimeDate => {
   const { locale = config.i18n?.defaultLocale } = useRouter() || {};
   const { formats } = useTheme();
   return {
@@ -18,4 +18,4 @@ const useLocaleTimeDate = (now: Date): LocalTimeDate => {
   };
 };
 
-export default useLocaleTimeDate;
+export default useLocaleDateTime;
