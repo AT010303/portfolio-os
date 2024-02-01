@@ -38,13 +38,19 @@ const fonts = {
 
 const sizes = {
   clock: {
-    width: '76px'
+    width: '86px'
   },
   startButton: {
     width: '36px'
   },
   taskbar: {
     entry: {
+      bottomBorder: '2px solid #76b9ed',
+      fontSize: '14px',
+      icon: {
+        margin: '0 5px',
+        size: '28px'
+      },
       maxWidth: '161px'
     },
     height: '40px'

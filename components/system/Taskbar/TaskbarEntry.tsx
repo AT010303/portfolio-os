@@ -1,7 +1,21 @@
+/* eslint-disable @next/next/no-img-element */
 import StyledTaskbarEntry from 'styles/components/system/Taskbar/StyledTaskbarEntry';
 
-const TaskbarEntry = (): JSX.Element => (
-  <StyledTaskbarEntry>Process</StyledTaskbarEntry>
+type TaskbarEntryProps = {
+  icon: string;
+  title: string;
+};
+
+const TaskbarEntry = ({
+  icon = '/chrome.ico',
+  title = 'Chrome'
+}: TaskbarEntryProps): JSX.Element => (
+  <StyledTaskbarEntry>
+    <figure>
+      <img src={icon} alt={title} />
+      <figcaption>{title}</figcaption>
+    </figure>
+  </StyledTaskbarEntry>
 );
 
 export default TaskbarEntry;

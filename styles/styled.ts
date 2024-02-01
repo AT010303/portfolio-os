@@ -33,6 +33,12 @@ declare module 'styled-components' {
       };
       taskbar: {
         entry: {
+          bottomBorder: string;
+          fontSize: string;
+          icon: {
+            margin: string;
+            size: string;
+          };
           maxWidth: string;
         };
         height: string;
