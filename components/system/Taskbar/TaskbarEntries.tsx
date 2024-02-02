@@ -4,7 +4,7 @@ import TaskbarEntry from './TaskbarEntry';
 
 const TaskbarEntries = (): JSX.Element => (
   <StyledTaskbarEntries>
-    <TaskbarEntry />
+    <TaskbarEntry icon="/chrome.ico" title="Chrome" />
   </StyledTaskbarEntries>
 );
 
