@@ -48,7 +48,13 @@
       }
     ],
     "react/prop-types": "off",
-    "allowImportingTsExtensions": "off"
+    "allowImportingTsExtensions": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^_"
+      }
+    ]
   },
   "globals": {
     "React": "readonly",
