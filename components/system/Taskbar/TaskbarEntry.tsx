@@ -7,8 +7,8 @@ type TaskbarEntryProps = {
 };
 
 const TaskbarEntry = ({
-  icon = '/chrome.ico',
-  title = 'Chrome'
+  icon,
+  title
 }: TaskbarEntryProps): JSX.Element => (
   <StyledTaskbarEntry>
     <figure>
