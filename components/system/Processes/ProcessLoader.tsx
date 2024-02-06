@@ -1,13 +1,10 @@
+import RenderProcess from 'components/system/Processes/RenderProcess';
 import { ProcessConsumer } from 'contexts/process';
-
-import RenderProcess from './RenderProcess';
 
 const ProcessLoader = (): JSX.Element => (
   <ProcessConsumer>
-    {({ processes }) =>
-      Object.entries(processes).map(([id, process]) => (
-        <RenderProcess key={id} {...process} />
-      ))
+    {({ mapProcesses }) =>
+      mapProcesses(([id, process]) => <RenderProcess key={id} {...process} />)
     }
   </ProcessConsumer>
 );
